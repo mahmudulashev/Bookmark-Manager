@@ -24,7 +24,7 @@ body {
 
 nav {
     display: flex;
-    gap: 25px;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -48,6 +48,10 @@ a {
     background: white;
     color: hsl(0, 94%, 66%);
     border: 2px solid hsl(0, 94%, 66%);
+}
+
+a:hover {
+    color: hsl(0, 94%, 66%);
 }
 
 /* HERO */
@@ -104,6 +108,12 @@ p {
     font-weight: 600;
     cursor: pointer;
 }
+
+/* .hero-button:hover {
+    background: white;
+    border: 2px hsl(231, 69%, 60%) solid;
+    color: hsl(231, 69%, 60%);
+} */
 
 .button1 {
     background: white;
@@ -195,6 +205,12 @@ p {
     cursor: pointer;
 }
 
+.tab-right button:hover {
+    background: white;
+    border: 2px hsl(231, 69%, 60%) solid;
+    color: hsl(231, 69%, 60%);
+}
+
 .tab-right h2 {
     font-size: 2.4rem;
 }
@@ -258,6 +274,12 @@ span h3 {
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 2rem;
+}
+
+button:hover {
+    background: white;
+    border: 2px hsl(231, 69%, 60%) solid;
+    color: hsl(231, 69%, 60%);
 }
 
 #box-2 {
@@ -324,6 +346,12 @@ span h3 {
     cursor: pointer;
     align-self: center;
     margin-top: 2rem;
+}
+
+.bottom button:hover {
+    background: white;
+    border: 2px hsl(231, 69%, 60%) solid;
+    color: hsl(231, 69%, 60%);
 }
 
 
@@ -393,4 +421,169 @@ footer span {
 footer h2 {
     color: white;
     font-weight: 500;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .header-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+    }
+
+    .hero-p {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .tab-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .tab-left, .tab-right {
+        width: 100%;
+    }
+
+    .middle2 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .bottom {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer span {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        margin-top: 1rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero-right img {
+        width: 100%;
+    }
+
+    .hero-h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-p {
+        font-size: 1rem;
+    }
+
+    .hero-bottom p {
+        width: 80%;
+    }
+
+    .tabs {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .tab h3 {
+        font-size: 1rem;
+    }
+
+    .tab-right h2 {
+        font-size: 2rem;
+    }
+
+    .tab-right p {
+        width: 100%;
+    }
+
+    .tab-left img {
+        width: 100%;
+    }
+
+    .bottom2 h2 {
+        font-size: 2rem;
+    }
+
+    .bottom2 h3 {
+        font-size: 0.9rem;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .bottom2 button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-h2 {
+        font-size: 2rem;
+    }
+
+    .hero-p {
+        font-size: 0.9rem;
+    }
+
+    .tab h3 {
+        font-size: 0.9rem;
+    }
+
+    .tab-right h2 {
+        font-size: 1.8rem;
+    }
+
+    .tab-right p {
+        font-size: 0.9rem;
+    }
+
+    .bottom2 h2 {
+        font-size: 1.8rem;
+    }
+
+    .bottom2 h3 {
+        font-size: 0.8rem;
+    }
 }
