@@ -44,6 +44,12 @@ a {
     border-radius: 7px;
 }
 
+.login:hover {
+    background: white;
+    color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+}
+
 /* HERO */
 
 .hero {
@@ -378,9 +384,13 @@ footer > nav > a {
     color: white;
 }
 
-span {
+footer span {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-  
+
+footer h2 {
+    color: white;
+    font-weight: 500;
+}
